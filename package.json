@@ -1,0 +1,28 @@
+{
+  "name": "neighborhood",
+  "version": "1.0.0",
+  "description": "my last project in udacity",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertoSoteres/neighborhoodMap.git"
+  },
+  "author": "roberto soteres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robertoSoteres/neighborhoodMap/issues"
+  },
+  "homepage": "https://github.com/robertoSoteres/neighborhoodMap#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "gulp-clean-css": "^3.9.0",
+    "gulp-dest": "^0.2.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0"
+  }
+}
