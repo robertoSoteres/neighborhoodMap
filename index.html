@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<html>
+  <head>
     <title>Neighborhood Map</title>
-    <link rel="stylesheet" href="css/styles.min.css">
-</head>
-<body>
-   
-    <script type="text/javascript" src="js/app.min.js"></script>
-</body>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="src/css/styles.css">
+    
+  </head>
+  <body>
+    <div id="map"></div>
+    <script type="text/javascript" src="js/lib/knockout-3.4.2.js"></script>
+    <script type="text/javascript" src="js/lib/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="src/js/app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHdI0KqVzvwvvYO4j1WI-bouZaGQzVR_A&callback=initMap" async defer></script>
+  </body>
 </html>
