@@ -28,22 +28,25 @@ var lugar = function(data){
     this.nombre = ko.observable(data.nombre);
     this.lat = ko.observable(data.lat);
     this.lng = ko.observable(data.long);
-    
+    this.visible = ko.observable(true);
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 40.484225, lng: -3.701123},
+        zoom: 15
+    });
     this.contenidoWindow = '<div class="info-window-content"><div class="title"><b>' + data.nombre + "</b></div><div class='lat'>" + data.lat +"</div><div class='lng'>"+ data.long +"</div></div>";
     
     this.window = new google.maps.InfoWindow({content: self.contenidoWindow});
     
-    map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: 40.484225, lng: -3.701123},
-        zoom: 15
-    });
+  
 
     this.marker = new google.maps.Marker({
 			position: new google.maps.LatLng(data.lat, data.long),
 			map: map,
 			title: data.nombre
 	});
-        
+    
+    this.marker.setMap(map);
+    
     this.marker.addListener('click', function() {
         self.window.open(this.map, self.marker);
     });
