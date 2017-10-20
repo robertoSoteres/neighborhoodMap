@@ -36,7 +36,6 @@ var lugar = function(data) {
 	this.name = data.nombre;
 	this.lat = data.lat;
 	this.long = data.long;
-;
 
 	this.visible = ko.observable(true);
 
@@ -61,7 +60,7 @@ var lugar = function(data) {
         self.infoWindow.setContent(self.contentString);
 		self.infoWindow.open(map, this);		
 		self.marker.setAnimation(google.maps.Animation.BOUNCE);
-        setTimeout(function(){ self.marker.setAnimation(null) }, 3550);
+        setTimeout(function(){ self.marker.setAnimation(null); }, 3550);
 
 	});
     
