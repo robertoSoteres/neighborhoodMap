@@ -1,7 +1,7 @@
 # neighborhoodMap
 Final project
 
-## Utilización Google maps + knockout js
+## Using Google maps + knockout js
 
 I have generated the following project in order to be able to prepare a final project for the [nanodegree de udacity de front-end][https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001].
 
