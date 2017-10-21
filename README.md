@@ -1,17 +1,15 @@
 # neighborhoodMap
-Proyecto final udacity
+Final project
 
 ## Utilización Google maps + knockout js
 
-He generado el siguiente proyecto con el fin de poder elaborar un proyecto final para el [nanodegree de udacity de front-end][https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001].
+I have generated the following project in order to be able to prepare a final project for the [nanodegree de udacity de front-end][https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001].
 
-### Tecnologías
+### Frameworks & libraries
 
-He usado la api de google maps con todo lo necesario para crear el mapa interactivo, knockout para gestionar de una manera sencilla la parte de MV* y jquery para algunas cosas más.
+I used the google maps API with al the necessary things to create the interactive map, knockout to control in a simple way the MC* part and jquery to othe things.
 
-
-
-Gracias!
+Thanks!
 
 Roberto Soteres.
 
