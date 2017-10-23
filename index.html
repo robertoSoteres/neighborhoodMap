@@ -1,41 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>Neighborhood Map</title>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/styles.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  </head>
-  <body>
-   
-   
-<div class="button-movil" id="nav-icon">
-    <span></span>
-    <span></span>
-    <span></span>
- </div>
+</head>
+<body>
+    <div class="button-movil" id="nav-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="places" id="search">
+        <input class="list-search" id="search-box" data-bind="textInput: searchTerm" placeholder="Escribe aquí el cine" />
+        <p class="titulo">Los mejores cines de Madrid</p>
+        <div class="list" id="list">
+            <ul class="lugares" data-bind="foreach: filtrarLista">
+                <li class="lugar" data-bind="text: name, click: animacion"></li>
+            </ul>
+        </div>
+    </div>
 
-  <div class="places" id="search">
-      <input class="list-search" id="search-box" data-bind="textInput: searchTerm" placeholder="Escribe aquí el cine" />
-      <p class="titulo">Los mejores cines de Madrid</p>
-      <div class="list" id="list">
-			<ul class="lugares" data-bind="foreach: filtrarLista">
-				<li class="lugar" data-bind="text: name, click: animacion"></li>
-			</ul>
-		</div>
-   </div>
-	
-		 <div id="map"></div>
-	
-    <script type="text/javascript" src="js/lib/knockout-3.4.2.js"></script>
-    <script type="text/javascript" src="js/lib/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/app.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHdI0KqVzvwvvYO4j1WI-bouZaGQzVR_A&callback=init" async defer></script>
+    <div id="map"></div>
 
-
-
-
-
-  </body>
+    <script src="js/lib/knockout-3.4.2.js"></script>
+    <script src="js/lib/jquery-3.2.1.min.js"></script>
+    <script src="src/js/app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHdI0KqVzvwvvYO4j1WI-bouZaGQzVR_A&libraries=places&callback=init" onerror="errorMap()" async defer></script>
+</body>
 </html>

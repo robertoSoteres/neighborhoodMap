@@ -9,10 +9,23 @@ I have generated the following project in order to be able to prepare a final pr
 I used the google maps API with al the necessary things to create the interactive map, knockout to control in a simple way the MC* part and jquery to othe things.
 
 ### How to use
-You should open file index.html in your favorite browser or in yout mobile and enjoy!
+1. Download the project.
+2. You should open file index.html in your favorite browser and enjoy!
 
-Thanks!
+We used a task runner: Gulp!
 
+### How to use Gulp
+For a Getting started guide, API docs, recipes, making a plugin, etc. check out the [docs](https://github.com/gulpjs/gulp/blob/master/docs/README.md)!
 
+We used this plugins: 
+    * [cleanCSS](https://www.npmjs.com/package/gulp-clean-css)
+    * [rename](https://www.npmjs.com/package/gulp-rename)
+    * [dest](https://www.npmjs.com/package/gulp-dest)
+    * [uglify](https://www.npmjs.com/package/gulp-uglyfly)
+    
+    
+If you want to run all the tasks, you should open the console, write "gulp" and enter. It will run all the tasks.
+
+Thank you!
 Roberto Soteres.
 
