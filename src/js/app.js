@@ -33,7 +33,7 @@ var lugares = [
 ];
 
 
-var Map ='';
+var Map;;
 // create 1 lugar for every object in lugares
 var lugar = function(data) {    
 	var self = this;
