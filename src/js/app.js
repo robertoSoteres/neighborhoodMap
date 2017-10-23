@@ -15,7 +15,7 @@ var lugares = [
         nombre: "Autocine Fuencarral",
         lat: 40.485569,
         long:-3.678341,
-        placeID: "ChIJfcPuDJwpQg0RUGr2lxan8DA"
+        placeID: "ChIJU5xT7FwpQg0RYOKcJVNVB0s"
     },
     {
         nombre: "Kinépolis Diversia",
@@ -33,7 +33,7 @@ var lugares = [
 ];
 
 
-
+var Map ='';
 // create 1 lugar for every object in lugares
 var lugar = function(data) {    
 	var self = this;
