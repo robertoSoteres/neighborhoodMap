@@ -44,16 +44,16 @@ var lugar = function(data) {
     this.address = '';
     this.telf = '';
 	this.visible = ko.observable(true);
-    this.temp;
-    this.clouds;
-    this.stationName;
+    this.temp = 0;
+    this.clouds ='';
+    this.stationName = '';
 	
     //create InfoWindow
 	this.InfoWindow = new google.maps.InfoWindow({content: self.contentString});
     
     //create service places
     var service = new google.maps.places.PlacesService(map);
-    var weather = 'http://api.geonames.org/findNearByWeatherJSON?lat='+ self.lat +'&lng='+ self.long +'&username=roberto.soteres'
+    var weather = 'http://api.geonames.org/findNearByWeatherJSON?lat='+ self.lat +'&lng='+ self.long +'&username=roberto.soteres';
  
         
     
