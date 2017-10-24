@@ -24,7 +24,7 @@ We used this plugins:
     * [uglify](https://www.npmjs.com/package/gulp-uglyfly)
     
     
-If you want to run all the tasks, you should open the console, write "gulp" and enter. It will run all the tasks.
+If you want to run all the tasks, you should install all the required packages (cleanCSS, rename, dest and uglify) and after that you should open the console, write "gulp" and enter. It will run all the tasks.
 
 Thank you!
 Roberto Soteres.

@@ -8,12 +8,12 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
-    <div class="button-movil" id="nav-icon">
+    <nav class="button-movil" id="nav-icon">
         <span></span>
         <span></span>
         <span></span>
-    </div>
-    <div class="places" id="search">
+    </nav>
+    <aside class="places" id="search">
         <input class="list-search" id="search-box" data-bind="textInput: searchTerm" placeholder="Escribe aquí el cine" />
         <p class="titulo">Los mejores cines de Madrid</p>
         <div class="list" id="list">
@@ -21,10 +21,12 @@
                 <li class="lugar" data-bind="text: name, click: animacion"></li>
             </ul>
         </div>
-    </div>
+        
+        <p class="gracefully">Power by GeoNames API</p>
+    </aside>
 
     <div id="map"></div>
-
+    
     <script src="js/lib/knockout-3.4.2.js"></script>
     <script src="js/lib/jquery-3.2.1.min.js"></script>
     <script src="js/app.min.js"></script>    

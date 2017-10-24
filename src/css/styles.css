@@ -60,7 +60,12 @@ p.titulo{
   color: white;
 }
 
-
+aside.places p.gracefully{
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    color: white;
+}
 
 .lugar{    
     padding: 5px;
@@ -79,6 +84,8 @@ p.titulo{
 .lugares{
     padding-left: 0;    
 }
+
+
 
 
 

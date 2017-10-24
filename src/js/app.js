@@ -54,18 +54,15 @@ var lugar = function(data) {
     //create service places
     var service = new google.maps.places.PlacesService(map);
     var weather = 'http://api.geonames.org/findNearByWeatherJSON?lat='+ self.lat +'&lng='+ self.long +'&username=roberto.soteres';
- 
-        
-    
-      var items = [];
-    $.getJSON( weather, function( data ) {        
+    var items = [];
+    $.getJSON( weather, function( data ) {
         self.temp = data.weatherObservation.temperature;
         self.clouds = data.weatherObservation.clouds;
         self.stationName = data.weatherObservation.stationName;
+    })
+    .fail(function(error) {
+        console.log( "error -->", error );
     });
-        
-    
-    
     service.getDetails({
         placeId: data.placeID
     }, function(place, status) {
