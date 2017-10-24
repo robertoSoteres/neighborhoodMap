@@ -18,10 +18,10 @@ We used a task runner: Gulp!
 For a Getting started guide, API docs, recipes, making a plugin, etc. check out the [docs](https://github.com/gulpjs/gulp/blob/master/docs/README.md)!
 
 We used this plugins: 
-    ..*[cleanCSS](https://www.npmjs.com/package/gulp-clean-css)
-    ..*[rename](https://www.npmjs.com/package/gulp-rename)
-    ..*[dest](https://www.npmjs.com/package/gulp-dest)
-    ..*[uglify](https://www.npmjs.com/package/gulp-uglyfly)
+    1.[cleanCSS](https://www.npmjs.com/package/gulp-clean-css)
+    2.[rename](https://www.npmjs.com/package/gulp-rename)
+    3.[dest](https://www.npmjs.com/package/gulp-dest)
+    4.[uglify](https://www.npmjs.com/package/gulp-uglyfly)
     
     
 If you want to run all the tasks, you should install all the required packages (cleanCSS, rename, dest and uglify) and after that you should open the console, write "gulp" and enter. It will run all the tasks.
