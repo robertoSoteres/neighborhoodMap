@@ -60,8 +60,8 @@ var lugar = function(data) {
         self.clouds = data.weatherObservation.clouds;
         self.stationName = data.weatherObservation.stationName;
     })
-    .fail(function(error) {
-        console.log( "error -->", error );
+    .fail(function(error, textStatus) {
+        alert( "Your error status --> " + textStatus );
     });
     service.getDetails({
         placeId: data.placeID
