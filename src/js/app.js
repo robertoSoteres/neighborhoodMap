@@ -44,16 +44,27 @@ var lugar = function(data) {
     this.address = '';
     this.telf = '';
 	this.visible = ko.observable(true);
-
+    this.temp;
+    this.clouds;
+    this.stationName;
 	
     //create InfoWindow
 	this.InfoWindow = new google.maps.InfoWindow({content: self.contentString});
     
     //create service places
     var service = new google.maps.places.PlacesService(map);
-
-    
+    var weather = 'http://api.geonames.org/findNearByWeatherJSON?lat='+ self.lat +'&lng='+ self.long +'&username=roberto.soteres'
+ 
         
+    
+      var items = [];
+    $.getJSON( weather, function( data ) {        
+        self.temp = data.weatherObservation.temperature;
+        self.clouds = data.weatherObservation.clouds;
+        self.stationName = data.weatherObservation.stationName;
+    });
+        
+    
     
     service.getDetails({
         placeId: data.placeID
@@ -79,6 +90,9 @@ var lugar = function(data) {
 		self.contentString = '<div class="info-window-content"><div class="title"><b>' + data.nombre + "</b></div>" +
         '<div class="content">Address: ' + self.address + "</div>" +
         '<div class="content">Phone: ' + self.telf + "</div>" +
+        '<div class="content">Temperature: ' + self.temp + "</div>" +
+        '<div class="content">Clouds: ' + self.clouds + "</div>" +
+        '<div class="content">Station: ' + self.stationName + "</div>" +
         '<div class="content">Lat: ' + self.lat + "</div>" +
         '<div class="content">Long: ' + self.long + "</div></div>";
         self.InfoWindow.setContent(self.contentString);
